@@ -1,16 +1,35 @@
-typedef struct pilha{
-	int *elem;
-	int size;
-	int i;
-}Pilha;
+// Copyright 2020
 
-void push(Pilha *p, int val);
-void pop(Pilha *p);
-int top(Pilha *p);
-int size(Pilha *p);
-void setSize(Pilha *p, int val);
-bool isFull(Pilha *p);
-bool isEmpty(Pilha *p);
-void createStack(Pilha *p, int val);
-void printStack(Pilha *p);
-void destroyStock(Pilha *p);
+#ifndef PILHA_HPP_
+#define PILHA_HPP_
+
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+class classePilha {
+public:
+	int pilhaElem;
+};
+
+class pilhaArray {
+private:
+	classePilha * pilha;
+	int A;
+	int TOP;
+	int SIZE;
+	classePilha ErrorCase;
+public:
+	void createStack(int val);
+	void push(int val);
+	classePilha pop();
+	classePilha top();
+	bool setSize(int val);
+	int size();
+	bool isFull();
+	bool isEmpty();
+	void destroyStock(pilhaArray x);
+};
+
+#endif // PILHA_HPP_
