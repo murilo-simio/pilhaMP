@@ -2,6 +2,9 @@
 
 #include "../include/pilha.hpp"
 
+#include <iostream>
+#include <cstdlib>
+
 //! createStack
 /*! Método que cria uma pilha com o tamanho desejado.
     \param val Um número inteiro

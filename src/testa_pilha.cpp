@@ -6,6 +6,8 @@
 #include "../include/testa_pilha.hpp"
 #include "../include/pilha.hpp"
 
+#include <iostream>
+
 TEST_CASE("Testando pilha", "[pilha]") {
     pilhaArray PILHA;
     PILHA.createStack(5);

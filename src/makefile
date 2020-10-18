@@ -10,11 +10,11 @@ LIBS=-lm
 _DEPS = pilha.hpp catch.hpp testa_pilha.hpp
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = pilha.o testa_pilha.o main.o
+_OBJ = pilha.o testa_pilha.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 
-$(ODIR)/%.o: %.c $(DEPS)
+$(ODIR)/%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 pilha: $(OBJ)
