@@ -1,10 +1,10 @@
 // "Copyrigth 2020 Murilo"
 
 #define CATCH_CONFIG_MAIN
+#include "../include/catch.hpp"
 
 #include "../include/testa_pilha.hpp"
 #include "../include/pilha.hpp"
-#include "../include/catch.hpp"
 
 TEST_CASE("Testando pilha", "[pilha]") {
     pilhaArray PILHA;
@@ -21,7 +21,7 @@ TEST_CASE("Testando pilha", "[pilha]") {
 
     SECTION("Testando metodo pop") {
         PILHA.pop();
-        REQUIRE(PILHA.isEmpty() == false);
+        REQUIRE(PILHA.isEmpty() == true);
         for (int i = 0; i < 4; i++) {
             PILHA.push(i);
         }

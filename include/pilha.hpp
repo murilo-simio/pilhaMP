@@ -3,9 +3,8 @@
 #ifndef PILHA_HPP_
 #define PILHA_HPP_
 
-
 #include <iostream>
-#include <stdlib.h>
+#include <cstdlib>
 
 using namespace std;
 
@@ -30,7 +29,7 @@ public:
 	int size();
 	bool isFull();
 	bool isEmpty();
-	void destroyStock(pilhaArray x);
+	bool destroyStack(pilhaArray x);
 };
 
 #endif  // PILHA_HPP_
