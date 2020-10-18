@@ -1,4 +1,4 @@
-// "Copyrigth 2020 Murilo"
+// "Copyright 2020 Murilo"
 
 #define CATCH_CONFIG_MAIN
 #include "../include/catch.hpp"

@@ -1,4 +1,4 @@
-// Copyrigth 2020
+// Copyright 2020
 
 #ifndef TESTA_PILHA_HPP_
 #define TESTA_PILHA_HPP_

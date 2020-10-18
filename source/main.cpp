@@ -1,4 +1,4 @@
-// Copyrigth 2020 Murilo Simionato Arnemann
+// Copyright 2020 Murilo Simionato Arnemann
 
 #include <iostream>
 #include <cstdlib>
@@ -9,8 +9,7 @@ using namespace std;
 #include "../include/pilha.hpp"
 #include "../include/testa_pilha.hpp"
 
-int main(){
-    int x=0;
+int main() {
     pilhaArray PILHA;
     PILHA.createStack(5);
     cout << "size" << PILHA.size() << endl;
