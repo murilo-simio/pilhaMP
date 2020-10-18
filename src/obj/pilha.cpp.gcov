@@ -1,0 +1,133 @@
+        -:    0:Source:pilha.cpp
+        -:    0:Graph:pilha.gcno
+        -:    0:Data:pilha.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// Copyright 2020
+        -:    2:
+        -:    3:#include "../include/pilha.hpp"
+        -:    4:
+        -:    5:#include <iostream>
+        -:    6:#include <cstdlib>
+        -:    7:
+        -:    8://! createStack
+        -:    9:/*! Método que cria uma pilha com o tamanho desejado.
+        -:   10:    \param val Um número inteiro
+        -:   11: */
+function _ZN10pilhaArray11createStackEi called 4 returned 100% blocks executed 100%
+        4:   12:void pilhaArray::createStack(int val) {
+        4:   13:    pilha = reinterpret_cast <classePilha*> (malloc(val*sizeof(classePilha))); /*!< Aloca os espaço para criar a pilha. */
+        4:   14:    TOP = -1; /*!< Define o topo da pilha como -1 para sinalizar que ela está vazia. */
+        4:   15:    SIZE = val; /*!< Define o tamanho da pilha de acordo com o que foi passado. */
+        4:   16:}
+        -:   17:
+        -:   18://! push
+        -:   19:/*! Método que adiciona um elemento na pilha.
+        -:   20:    \param val Um número inteiro
+        -:   21: */
+function _ZN10pilhaArray4pushEi called 6 returned 100% blocks executed 80%
+        6:   22:void pilhaArray::push(int val) {
+        6:   23:    if (!isFull()) { /*!< Verifica se a pilha está cheia */
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0
+        6:   24:    TOP++; /*!< Move o topo da pilha */
+        6:   25:    pilha[TOP].pilhaElem = val; /*!< Adiciona o novo elemento como novo topo */
+        -:   26:    } else {
+    #####:   27:        return; }
+        -:   28:}
+        -:   29:
+        -:   30://! pop
+        -:   31:/*! Método que retira um elemento da pilha */
+function _ZN10pilhaArray3popEv called 3 returned 100% blocks executed 100%
+        3:   32:classePilha pilhaArray::pop() {
+        3:   33:    ErrorCase.pilhaElem = -2;
+        -:   34:    classePilha oldTop;
+        3:   35:    if (!isEmpty()) {
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1
+        2:   36:        oldTop = pilha[TOP];
+        2:   37:        TOP = TOP -1;
+        2:   38:        return oldTop;
+        -:   39:    } else {
+        1:   40:        return ErrorCase;
+        -:   41:    }
+        -:   42:}
+        -:   43:
+        -:   44://! top
+        -:   45:/*! Método que retorna o elemento que está no topo da pilha */
+function _ZN10pilhaArray3topEv called 1 returned 100% blocks executed 80%
+        1:   46:classePilha pilhaArray::top() {
+        1:   47:    ErrorCase.pilhaElem = -2;
+        1:   48:    if (!isEmpty()) { /*!< Verifica se a pilha não está vazia */
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   49:        return pilha[TOP]; /*!< Retorna o elemento do topo da pilha */
+        -:   50:    } else {
+    #####:   51:        return ErrorCase; /*!< Se a pilha estiver vazia retorna erro */
+        -:   52:    }
+        -:   53:}
+        -:   54:
+        -:   55://! setSize
+        -:   56:/*! Método que modifica o tamanho da pilha.
+        -:   57:    \param val Um número inteiro
+        -:   58: */
+function _ZN10pilhaArray7setSizeEi called 1 returned 100% blocks executed 100%
+        1:   59:bool pilhaArray::setSize(int val) {
+        -:   60:    pilha = reinterpret_cast <classePilha*>
+        1:   61:    (realloc(pilha, val*sizeof(classePilha))); /*!< Realoca a lista com o novo tamanho */
+        1:   62:    SIZE = val; /*!< Salva o novo tamanho */
+        1:   63:    return true;
+        -:   64:}
+        -:   65:
+        -:   66://! size
+        -:   67:/*! Método que retorna o tamanho da pilha. */
+function _ZN10pilhaArray4sizeEv called 6 returned 100% blocks executed 100%
+        6:   68:int pilhaArray::size() {
+        6:   69:    return SIZE;
+        -:   70:}
+        -:   71:
+        -:   72://! isEmpty
+        -:   73:/*! Método que verifica se a pilha está vazia. */
+function _ZN10pilhaArray7isEmptyEv called 11 returned 100% blocks executed 100%
+       11:   74:bool pilhaArray::isEmpty() {
+       11:   75:    if (TOP <= -1)
+branch  0 taken 6 (fallthrough)
+branch  1 taken 5
+        6:   76:        return 1;
+        -:   77:    else
+        5:   78:        return 0;
+        -:   79:}
+        -:   80:
+        -:   81://! createStack
+        -:   82:/*! Método que verifica se a pilha está cheia. */
+function _ZN10pilhaArray6isFullEv called 11 returned 100% blocks executed 75%
+       11:   83:bool pilhaArray::isFull() {
+       11:   84:    if (SIZE == TOP - 1)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 11
+    #####:   85:        return 1;
+        -:   86:    else
+       11:   87:        return 0;
+        -:   88:}
+        -:   89:
+        -:   90://! createStack
+        -:   91:/*! Método que destrói a pilha
+        -:   92:    \param x Um parâmetro do tipo pilhaArray
+        -:   93: */
+function _ZN10pilhaArray12destroyStackES_ called 0 returned 0% blocks executed 0%
+    #####:   94:bool pilhaArray::destroyStack(pilhaArray x) {
+    #####:   95:    delete x.pilha;
+call    0 never executed
+    #####:   96:    x.TOP = -1;
+    #####:   97:    return true;
+function _GLOBAL__sub_I__ZN10pilhaArray11createStackEi called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        3:   98:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0

@@ -1,13 +1,13 @@
 IDIR =../include
 CC=g++
-CFLAGS=-I$(IDIR) -ftest-coverage -fprofile-arcs -std=c++11
+CFLAGS=-I$(IDIR) -ftest-coverage -fprofile-arcs 
 
 ODIR=obj
 LDIR =../lib
 
 LIBS=-lm
 
-_DEPS = pilha.hpp catch.hpp testa_pilha.hpp
+_DEPS = catch.hpp pilha.hpp testa_pilha.hpp
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 _OBJ = pilha.o testa_pilha.o
