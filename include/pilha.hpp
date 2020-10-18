@@ -3,6 +3,7 @@
 #ifndef PILHA_HPP_
 #define PILHA_HPP_
 
+
 #include <iostream>
 #include <stdlib.h>
 
@@ -32,4 +33,4 @@ public:
 	void destroyStock(pilhaArray x);
 };
 
-#endif // PILHA_HPP_
+#endif  // PILHA_HPP_

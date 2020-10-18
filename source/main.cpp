@@ -1,8 +1,7 @@
 // Copyrigth 2020 Murilo Simionato Arnemann
 
-#include "pilha.cpp"
-#include "../include/catch.hpp"
+#include <iostream>
+#include <stdlib.h>
 
-int main(){
-    return 0;
-}
+#include "../include/pilha.hpp"
+#include "../include/testa_pilha.hpp"
