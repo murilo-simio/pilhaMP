@@ -87,23 +87,19 @@
 % Headers & footers
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Gerado por Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Gerado por Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
 \renewcommand{\footrulewidth}{0.4pt}
-%
-\fancypagestyle{fancyplain}{
-\fancyhf{}
-\fancyhead[LE, RO]{\bfseries\thepage}
-\fancyhead[LO]{\bfseries\rightmark}
-\fancyhead[RE]{\bfseries\leftmark}
-\fancyfoot[LO, RE]{\bfseries\scriptsize Gerado por Doxygen }
-}
-%
-\fancypagestyle{plain}{
-\fancyhf{}
-\fancyfoot[LO, RE]{\bfseries\scriptsize Gerado por Doxygen }
-\renewcommand{\headrulewidth}{0pt}}
-%
-\pagestyle{fancyplain}
-%
 \renewcommand{\chaptermark}[1]{%
   \markboth{#1}{}%
 }
@@ -155,7 +151,6 @@
 %===== C O N T E N T S =====
 
 \begin{document}
-\raggedbottom
 
 % Titlepage & ToC
 \hypersetup{pageanchor=false,
@@ -168,7 +163,7 @@
 \begin{center}%
 {\Large Trabalho de Métodos de Programação }\\
 \vspace*{1cm}
-{\large Gerado por Doxygen 1.9.0}\\
+{\large Gerado por Doxygen 1.8.20}\\
 \end{center}
 \end{titlepage}
 \clearemptydoublepage
@@ -179,10 +174,11 @@
 \hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
-\chapter{pilha\+MP}
-\label{md_README}
-\Hypertarget{md_README}
-\input{md_README}
+\chapter{Índice dos componentes}
+\input{annotated}
+\chapter{Documentação da classe}
+\input{classclassePilha}
+\input{classpilhaArray}
 %--- End generated contents ---
 
 % Index

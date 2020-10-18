@@ -186,8 +186,9 @@
 % (only if caption is specified)
 \newenvironment{DoxyImage}{%
   \begin{figure}[H]%
-    \centering%
+    \begin{center}%
 }{%
+    \end{center}%
   \end{figure}%
 }
 
@@ -570,6 +571,6 @@
 % Define caption that is also suitable in a table
 \makeatletter
 \def\doxyfigcaption{%
-\H@refstepcounter{figure}%
+\refstepcounter{figure}%
 \@dblarg{\@caption{figure}}}
 \makeatother

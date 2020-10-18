@@ -3,9 +3,6 @@
 #ifndef PILHA_HPP_
 #define PILHA_HPP_
 
-#include <iostream>
-#include <cstdlib>
-
 using namespace std;
 
 //! classePilha

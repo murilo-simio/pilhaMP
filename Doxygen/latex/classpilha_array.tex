@@ -1,0 +1,188 @@
+\hypertarget{classpilha_array}{}\doxysection{Referência da Classe pilha\+Array}
+\label{classpilha_array}\index{pilhaArray@{pilhaArray}}
+
+
+\mbox{\hyperlink{classpilha_array}{pilha\+Array}}  
+
+
+
+
+{\ttfamily \#include $<$pilha.\+hpp$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classpilha_array_aca7e08eb06c2ef11eaacfce5ebb5126d}{create\+Stack}} (int val)
+\begin{DoxyCompactList}\small\item\em Método para criar a pilha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpilha_array_a3aa7aaa5b7227d34da3598043f7cc2fc}{push}} (int val)
+\begin{DoxyCompactList}\small\item\em Método para adicionar elemento na pilha. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classclasse_pilha}{classe\+Pilha}} \mbox{\hyperlink{classpilha_array_a786af7521b0ff45e3aa2885c7864995c}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Método para remover elemento da pilha. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classclasse_pilha}{classe\+Pilha}} \mbox{\hyperlink{classpilha_array_a4422322e621a811562310fb22c3ad0ca}{top}} ()
+\begin{DoxyCompactList}\small\item\em Método para ver elemento do topo da pilha. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpilha_array_ae856a136972f1a275ef55ee65891a60c}{set\+Size}} (int val)
+\begin{DoxyCompactList}\small\item\em Método para alterar tamanho da pilha. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpilha_array_a4e460a13758eac72e4619bffe96e367d}{size}} ()
+\begin{DoxyCompactList}\small\item\em Método para ver tamanho da pilha. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpilha_array_acace4b3d04c01e78df154eab95d5f791}{is\+Full}} ()
+\begin{DoxyCompactList}\small\item\em Método para verificar se pilha está cheia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpilha_array_ad1cd1f9b56f760f0574c2e4ce7a521cb}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Método para verifciar se pilha está vazia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpilha_array_a209f88744a929f156854b2c7485df3bc}{destroy\+Stack}} (\mbox{\hyperlink{classpilha_array}{pilha\+Array}} x)
+\begin{DoxyCompactList}\small\item\em Método para destruir pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+\mbox{\hyperlink{classpilha_array}{pilha\+Array}} 
+
+Uma classe que contém os métodos e atributos da pilha. 
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classpilha_array_aca7e08eb06c2ef11eaacfce5ebb5126d}\label{classpilha_array_aca7e08eb06c2ef11eaacfce5ebb5126d}} 
+\index{pilhaArray@{pilhaArray}!createStack@{createStack}}
+\index{createStack@{createStack}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{createStack()}{createStack()}}
+{\footnotesize\ttfamily void pilha\+Array\+::create\+Stack (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Método para criar a pilha. 
+
+create\+Stack
+
+Método que cria uma pilha com o tamanho desejado. 
+\begin{DoxyParams}{Parâmetros}
+{\em val} & Um número inteiro \\
+\hline
+\end{DoxyParams}
+$<$ Aloca os espaço para criar a pilha.
+
+$<$ Define o topo da pilha como -\/1 para sinalizar que ela está vazia.
+
+$<$ Define o tamanho da pilha de acordo com o que foi passado.\mbox{\Hypertarget{classpilha_array_a209f88744a929f156854b2c7485df3bc}\label{classpilha_array_a209f88744a929f156854b2c7485df3bc}} 
+\index{pilhaArray@{pilhaArray}!destroyStack@{destroyStack}}
+\index{destroyStack@{destroyStack}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{destroyStack()}{destroyStack()}}
+{\footnotesize\ttfamily bool pilha\+Array\+::destroy\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpilha_array}{pilha\+Array}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Método para destruir pilha. 
+
+create\+Stack
+
+Método que destrói a pilha 
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Um parâmetro do tipo \mbox{\hyperlink{classpilha_array}{pilha\+Array}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpilha_array_ad1cd1f9b56f760f0574c2e4ce7a521cb}\label{classpilha_array_ad1cd1f9b56f760f0574c2e4ce7a521cb}} 
+\index{pilhaArray@{pilhaArray}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool pilha\+Array\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para verifciar se pilha está vazia. 
+
+is\+Empty
+
+Método que verifica se a pilha está vazia. \mbox{\Hypertarget{classpilha_array_acace4b3d04c01e78df154eab95d5f791}\label{classpilha_array_acace4b3d04c01e78df154eab95d5f791}} 
+\index{pilhaArray@{pilhaArray}!isFull@{isFull}}
+\index{isFull@{isFull}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily bool pilha\+Array\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para verificar se pilha está cheia. 
+
+create\+Stack
+
+Método que verifica se a pilha está cheia. \mbox{\Hypertarget{classpilha_array_a786af7521b0ff45e3aa2885c7864995c}\label{classpilha_array_a786af7521b0ff45e3aa2885c7864995c}} 
+\index{pilhaArray@{pilhaArray}!pop@{pop}}
+\index{pop@{pop}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classclasse_pilha}{classe\+Pilha}} pilha\+Array\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para remover elemento da pilha. 
+
+pop
+
+Método que retira um elemento da pilha \mbox{\Hypertarget{classpilha_array_a3aa7aaa5b7227d34da3598043f7cc2fc}\label{classpilha_array_a3aa7aaa5b7227d34da3598043f7cc2fc}} 
+\index{pilhaArray@{pilhaArray}!push@{push}}
+\index{push@{push}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void pilha\+Array\+::push (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Método para adicionar elemento na pilha. 
+
+push
+
+Método que adiciona um elemento na pilha. 
+\begin{DoxyParams}{Parâmetros}
+{\em val} & Um número inteiro \\
+\hline
+\end{DoxyParams}
+$<$ Verifica se a pilha está cheia
+
+$<$ Move o topo da pilha
+
+$<$ Adiciona o novo elemento como novo topo\mbox{\Hypertarget{classpilha_array_ae856a136972f1a275ef55ee65891a60c}\label{classpilha_array_ae856a136972f1a275ef55ee65891a60c}} 
+\index{pilhaArray@{pilhaArray}!setSize@{setSize}}
+\index{setSize@{setSize}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily bool pilha\+Array\+::set\+Size (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Método para alterar tamanho da pilha. 
+
+set\+Size
+
+Método que modifica o tamanho da pilha. 
+\begin{DoxyParams}{Parâmetros}
+{\em val} & Um número inteiro \\
+\hline
+\end{DoxyParams}
+$<$ Realoca a lista com o novo tamanho
+
+$<$ Salva o novo tamanho\mbox{\Hypertarget{classpilha_array_a4e460a13758eac72e4619bffe96e367d}\label{classpilha_array_a4e460a13758eac72e4619bffe96e367d}} 
+\index{pilhaArray@{pilhaArray}!size@{size}}
+\index{size@{size}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int pilha\+Array\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para ver tamanho da pilha. 
+
+size
+
+Método que retorna o tamanho da pilha. \mbox{\Hypertarget{classpilha_array_a4422322e621a811562310fb22c3ad0ca}\label{classpilha_array_a4422322e621a811562310fb22c3ad0ca}} 
+\index{pilhaArray@{pilhaArray}!top@{top}}
+\index{top@{top}!pilhaArray@{pilhaArray}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classclasse_pilha}{classe\+Pilha}} pilha\+Array\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para ver elemento do topo da pilha. 
+
+top
+
+Método que retorna o elemento que está no topo da pilha $<$ Verifica se a pilha não está vazia
+
+$<$ Retorna o elemento do topo da pilha
+
+$<$ Se a pilha estiver vazia retorna erro
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{pilha_8hpp}{pilha.\+hpp}}\item 
+src/\mbox{\hyperlink{pilha_8cpp}{pilha.\+cpp}}\end{DoxyCompactItemize}
